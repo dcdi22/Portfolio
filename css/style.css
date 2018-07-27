@@ -1,0 +1,92 @@
+/* body
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	line-height: 1.5;
+    color: 
+     */
+/* 
+     padding: 30px 0 120px */
+/* 
+	h1
+		text-align: center
+		text-transform: uppercase
+		font-size: 65px
+		font-weight: 400
+		letter-spacing: 3px
+		line-height: .8
+		padding-top: 50px
+		font-family: 'Montserrat', sans-serif */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.jumbotron-fluid {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    color: white;
+    padding: 100px;
+    background-color: #85B4B1;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 55px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: .8;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.active {
+    color: black;
+}
+
+.active:hover {
+    color: black;
+}
+
+[aria-selected="false"] {
+    color: grey;
+}
+
+[aria-selected="false"]:hover {
+    color: #6da09e;
+}
+
+
+
+.photo{
+    display:block;/*?不懂display:block在此處的作用??*/
+    width:100%;
+  }
+  
+  .overlay{
+    position:absolute;
+    top:0;    
+    left:0;
+    right:0;
+    bottom:0; /*完全覆蓋在父元素上*/
+    background-color:hsla(184, 28%, 39%, 0.8);
+    width:100%;
+    height:100%;
+    opacity:0; /*設定透明度*/
+    transition:.5s ease; /*設定css動畫效果*/
+    
+  }
+  
+  .card:hover .overlay{
+    opacity:1;   /*設定透明度*/
+  }
+  
+  .overlay_description{
+    font-size:20px;
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%); /*因為top距離左邊50% 文字並未置中 需要補償 推回去*/
+   -ms-transform:translate(-50%, -50%);
+    
+  }
